@@ -112,18 +112,16 @@ function generateTags(){
       console.log('tag: ' ,tag);
       /* generate HTML of the link */
 
-      
-      const linkHTML = '<li><a href="#' + article + '"><span>' + articleTags + '</span></a></li>';
+      const linkHTML = '<li><a href="#' + article + '"><span>' + tag + '</span></a></li>';
       /* add generated code to html variable */
 
-      html = html + linkHTML;
+      html = html + linkHTML + " ";
     /* END LOOP: for each tag */
 
     }
     /* insert HTML of all the links into the tags wrapper */
     titleList.innerHTML = html;
   /* END LOOP: for every article: */
-
   }
 }
 generateTags();
