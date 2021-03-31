@@ -1,26 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext');
-
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&amp;subset=latin-ext&quot;);
 /* Variables */
-
-$color-light: #fff;
-$color-dark: #444;
-
-$font-logo: 'Sacramento', cursive;
-$font-header: 'Oswald', sans-serif;
-$font-text: 'Source Sans Pro', sans-serif;
-
 /* Global */
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
-  background: $color-light;
-  font-family: $font-text;
-  color: $color-dark;
+  background: rgb(236, 252, 253);
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: rgb(128, 13, 13);
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
 }
 
@@ -30,19 +20,19 @@ body {
 }
 
 .section-title {
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
-  font-family: $font-header;
+  font-family: Oswald , sans-serif;
   font-weight: 600;
-  span {
-    text-transform: none;
-    font-weight: 400;
-    color: lighten($color-dark, 20%);
-  }
+}
+
+.section-title span {
+  text-transform: none;
+  font-weight: 400;
+  color: #948e8e;
 }
 
 /* Layout */
-
 .wrapper {
   display: flex;
   margin-left: 10px;
@@ -57,55 +47,50 @@ body {
 }
 
 .sidebar, .posts {
-  background: $color-light;
+  background: rgb(228, 252, 251);
   margin-right: 10px;
   padding: 40px;
-  border: 1px solid $color-dark;
+  border: 1px solid rgb(156, 19, 19);
   border-radius: 5px;
 }
 
 /* Logo */
-
 .logo {
-  font-family: $font-logo;
+  font-family: Sacramento, cursive;
   font-weight: 400;
   font-size: 104px;
   line-height: 1;
   text-align: center;
+  color: rgb(67, 218, 218);
 }
 
 /* Lists */
-
 .list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  .active {
-    font-weight: bold;
-  }
 }
 
-.list-horizontal {
-  li {
-    display: inline-block;
-  }
+.list .active {
+  font-weight: bold;
+}
+
+.list-horizontal li {
+  display: inline-block;
 }
 
 /* Authors */
-
-.authors {
-  li {
-    margin-bottom: 12px;
-  }
+.authors li {
+  margin-bottom: 15px;
 }
 
 /* Post */
-
 .post {
   display: none;
-  &.active {
-    display: block;
-  }
+}
+
+.post.active {
+  display: block;
 }
 
 .post-author {
@@ -114,7 +99,29 @@ body {
 
 .post-tags {
   display: flex;
-  p {
-    margin: 0 10px 0 0;
-  }
+}
+
+.post-tags p {
+  margin: 0 20px 0 0;
+}
+
+/* tags */
+.tag-size-1 {
+  font-size: 16px;
+  color: #214ee4;
+}
+
+.tag-size-2 {
+  font-size: 16px;
+  color: #4080FF;
+}
+
+.tag-size-3 {
+  font-size: 16px;
+  color: #214ee4;
+}
+
+.tags li {
+  display: inline-block;
+  
 }
