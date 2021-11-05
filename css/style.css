@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #ecfcfd;
+  background: #d8d8d8;
   font-family: 'Open Sans Condensed', sans-serif;
   color: #800d0d;
   font-weight: 300;
@@ -47,7 +47,7 @@ body {
 }
 
 .sidebar, .posts {
-  background: #e4fcfb;
+  background: #ffffff;
   margin-right: 10px;
   padding: 40px;
   border: 1px solid #9c1313;
@@ -61,7 +61,7 @@ body {
   font-size: 104px;
   line-height: 1;
   text-align: center;
-  color: #43dada;
+  color: #3dc1f5;
 }
 
 /* Lists */
